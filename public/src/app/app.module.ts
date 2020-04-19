@@ -7,6 +7,7 @@ import { JobsComponent } from './jobs/jobs.component';
 import { MissionComponent } from './mission/mission.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { ObjectivesComponent } from './objectives/objectives.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ObjectivesComponent } from './objectives/objectives.component';
     JobsComponent,
     MissionComponent,
     NotificationsComponent,
-    ObjectivesComponent
+    ObjectivesComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule
