@@ -8,6 +8,7 @@ import { MissionComponent } from './mission/mission.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { ObjectivesComponent } from './objectives/objectives.component';
 import { ProfileComponent } from './profile/profile.component';
+import { VisionComponent } from './vision/vision.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProfileComponent } from './profile/profile.component';
     MissionComponent,
     NotificationsComponent,
     ObjectivesComponent,
-    ProfileComponent
+    ProfileComponent,
+    VisionComponent
   ],
   imports: [
     BrowserModule
