@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { MissionComponent } from './mission/mission.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { ObjectivesComponent } from './objectives/objectives.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { NotificationsComponent } from './notifications/notifications.component'
     HomeComponent,
     JobsComponent,
     MissionComponent,
-    NotificationsComponent
+    NotificationsComponent,
+    ObjectivesComponent
   ],
   imports: [
     BrowserModule
