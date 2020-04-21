@@ -1,8 +1,20 @@
-<h1 style="text-align: center;">
+<html>
+  <h1 style="text-align: center;">
     Take a look at our Job Postings!
   </h1>
-  <div>
-    <p>
-  
-    </p>
-  </div>
+  <body>
+    <table>
+      <tr>
+        <th>Company Name</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+      </tr>
+      <tr *ngFor = "let c of companies">
+        <td>{{c.name}}</td>
+        <td>{{c.primary_phone}}</td>
+        <td>{{c.primary_email}}</td>
+      </tr>
+    </table>
+    
+  </body>
+</html>
