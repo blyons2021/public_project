@@ -9,6 +9,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { ObjectivesComponent } from './objectives/objectives.component';
 import { ProfileComponent } from './profile/profile.component';
 import { VisionComponent } from './vision/vision.component';
+import {HttpClientModule} from '@angular/common/http';
 
 const routes: Routes=[
   {path: 'jobs', component: JobsComponent}
@@ -27,6 +28,7 @@ const routes: Routes=[
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(
       routes
     )
