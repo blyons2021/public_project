@@ -9,7 +9,9 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { ObjectivesComponent } from './objectives/objectives.component';
 import { ProfileComponent } from './profile/profile.component';
 import { VisionComponent } from './vision/vision.component';
+import { SearchComponent } from './search/search.component';
 import {HttpClientModule} from '@angular/common/http';
+import { from } from 'rxjs';
 
 const routes: Routes=[
   {path: 'vision', component: VisionComponent},
@@ -19,7 +21,7 @@ const routes: Routes=[
   {path: 'profile', component: ProfileComponent},
   {path: 'jobs', component: JobsComponent},
   {path: 'mission', component: MissionComponent},
-  {path: '', redirectTo: 'home', pathMatch: 'full'}
+  {path: 'search', component: SearchComponent}
 ]
 
 @NgModule({
@@ -31,7 +33,8 @@ const routes: Routes=[
     NotificationsComponent,
     ObjectivesComponent,
     ProfileComponent,
-    VisionComponent
+    VisionComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
