@@ -12,6 +12,11 @@ import { VisionComponent } from './vision/vision.component';
 import {HttpClientModule} from '@angular/common/http';
 
 const routes: Routes=[
+  {path: 'vision', component: VisionComponent},
+  {path: 'objectives', component: ObjectivesComponent},
+  {path: 'notifications', component: NotificationsComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'profile', component: ProfileComponent},
   {path: 'jobs', component: JobsComponent},
   {path: 'mission', component: MissionComponent}
 ]
