@@ -2,6 +2,10 @@
   <h1>
     Take a look at our Partner Companies!
   </h1>
+  <div style="justify-content: center; display: flex; width: 100%;">
+    <input type="text" (keyup) = "filter($event.target.value)" placeholder="Filter">
+  </div>
+  <br>
   <div style="justify-content: center; display: flex; width: 100%;" >
     <table>
       <tr>
@@ -9,7 +13,7 @@
         <th>Phone Number</th>
         <th>Email</th>
       </tr>
-      <tr *ngFor = "let c of companies">
+      <tr *ngFor = "let c of companiesData">
         <td>{{c.name}}</td>
         <td>{{c.primary_phone}}</td>
         <td>{{c.primary_email}}</td>
