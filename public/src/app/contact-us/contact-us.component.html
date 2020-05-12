@@ -1,0 +1,21 @@
+<h1 style="text-align: center;">
+    Leave questions and contact info below. We will try to get back to you!
+</h1> 
+<div style="justify-content: center; display: flex; width: 100%;">
+    <form [formGroup]="contactUsForm" (ngSubmit) = "onSubmit()"> 
+        <label for="wholeName"><b>Please put your full name</b></label>
+        <input type="text" formControlName="wholeName" placeholder="Full Name">
+        <br>
+        <label for="cellNumber"><b>Please put your cell number</b></label>
+        <input type="text" formControlName="cellNumber" placeholder="Cell Number">
+        <br>
+        <label for="emailAddr"><b>Please put your email address</b></label>
+        <input type="text" formControlName="emailAddr" placeholder="Email">
+        <br>
+        <label for="question"><b>Please type your question</b></label>
+        <input type="text" formControlName="question" placeholder="...">
+        <br>
+        <button type="submit" style="justify-content: center; display: flex; width: 100%;">Submit</button>
+
+    </form>
+</div>

@@ -10,6 +10,9 @@ import { ObjectivesComponent } from './objectives/objectives.component';
 import { ProfileComponent } from './profile/profile.component';
 import { VisionComponent } from './vision/vision.component';
 import {HttpClientModule} from '@angular/common/http';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import {ReactiveFormsModule} from '@angular/forms';
+
 
 const routes: Routes=[
   {path: 'vision', component: VisionComponent},
@@ -19,6 +22,7 @@ const routes: Routes=[
   {path: 'profile', component: ProfileComponent},
   {path: 'jobs', component: JobsComponent},
   {path: 'mission', component: MissionComponent},
+  {path: 'contact-us', component: ContactUsComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'}
 ]
 
@@ -31,11 +35,13 @@ const routes: Routes=[
     NotificationsComponent,
     ObjectivesComponent,
     ProfileComponent,
-    VisionComponent
+    VisionComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(
       routes
     )
